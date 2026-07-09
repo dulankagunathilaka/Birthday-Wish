@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A friendly birthday page for Kavi from Dulanka Nimsara." />
+  <title>Happy Birthday, Kavi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-orb orb-one"></div>
+  <div class="bg-orb orb-two"></div>
+  <div class="bg-orb orb-three"></div>
+
+  <main class="page-shell" id="top">
+    <section class="hero card reveal">
+      <div class="hero-copy">
+        <p class="eyebrow">A birthday page made with care</p>
+        <h1 class="hero-title">
+          <span class="hero-title-line">Happy Birthday,</span>
+          <span class="hero-title-name">Kavi</span>
+        </h1>
+        <p class="lead">From Dulanka Nimsara, for the best friend who has been part of life since age 5.</p>
+        <p class="hero-tagline">A friendship story from age 5 to forever.</p>
+        <p class="story">This page is built to feel warm, playful, and memorable. Open it on your birthday, enjoy the animations, and relive a few favorite moments.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#memories" data-surprise="Your memories are waiting">See your images</a>
+          <button class="button ghost" id="confettiBtn" type="button">Celebrate now</button>
+        </div>
+      </div>
+
+      <div class="hero-panel">
+        <div class="portrait-stack">
+          <div class="portrait-card portrait-main">
+            <span class="spark spark-a"></span>
+            <span class="spark spark-b"></span>
+            <div>
+              <p class="panel-label">Best Friend Energy</p>
+              <h2>Since age 5</h2>
+              <p>Always there, always real, always Kavi.</p>
+            </div>
+          </div>
+          <div class="portrait-card portrait-small">
+            <p class="panel-label">From</p>
+            <h3>Dulanka Nimsara</h3>
+          </div>
+          <div class="portrait-card portrait-note">
+            <p class="panel-label">Birthday note</p>
+            <p class="note-copy">You deserve a day that feels bright, exciting, and a little magical.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-grid reveal">
+      <article class="info-card">
+        <p class="panel-label">Our story</p>
+        <h2>Two friends, one long memory trail.</h2>
+        <p>Some friendships start with a schoolyard, some with a smile, and some just stay through everything. Yours is the kind that deserves a page of its own.</p>
+      </article>
+      <article class="info-card accent">
+        <p class="panel-label">Birthday wish</p>
+        <h2>May this year bring more wins, more laughter, and more moments worth saving.</h2>
+      </article>
+    </section>
+
+    <section id="memories" class="gallery-section reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Five favorite frames</p>
+        <h2>Five moments, one bright story.</h2>
+      </div>
+
+      <div class="carousel-shell">
+        <div class="carousel-stage" aria-label="Birthday memories carousel">
+          <div class="gallery-carousel" id="memoryCarousel">
+            <figure class="memory-card" data-card>
+              <img src="assets/Image01.jpeg" alt="Memory image 01 for Kavi" data-fallback="image 01" loading="lazy" decoding="async" />
+              <figcaption>
+                <span>01</span>
+                <strong>First spark</strong>
+              </figcaption>
+            </figure>
+            <figure class="memory-card" data-card>
+              <img src="assets/Image02.jpeg" alt="Memory image 02 for Kavi" data-fallback="image 02" loading="lazy" decoding="async" />
+              <figcaption>
+                <span>02</span>
+                <strong>Best-friend moment</strong>
+              </figcaption>
+            </figure>
+            <figure class="memory-card" data-card>
+              <img src="assets/Image03.jpeg" alt="Memory image 03 for Kavi" data-fallback="image 03" loading="lazy" decoding="async" />
+              <figcaption>
+                <span>03</span>
+                <strong>Good vibes only</strong>
+              </figcaption>
+            </figure>
+            <figure class="memory-card" data-card>
+              <img src="assets/Image04.jpeg" alt="Memory image 04 for Kavi" data-fallback="image 04" loading="lazy" decoding="async" />
+              <figcaption>
+                <span>04</span>
+                <strong>Laughs we keep</strong>
+              </figcaption>
+            </figure>
+            <figure class="memory-card" data-card>
+              <img src="assets/Image05.jpeg" alt="Memory image 05 for Kavi" data-fallback="image 05" loading="lazy" decoding="async" />
+              <figcaption>
+                <span>05</span>
+                <strong>Forever friend</strong>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="carousel-controls">
+          <button class="button ghost carousel-btn" type="button" id="carouselPrev" aria-label="Previous image">Previous</button>
+          <div class="carousel-dots" id="carouselDots" aria-label="Carousel position"></div>
+          <button class="button ghost carousel-btn" type="button" id="carouselNext" aria-label="Next image">Next</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="surprise-lab reveal">
+      <div class="section-heading">
+        <p class="eyebrow">More surprises</p>
+        <h2>Tap a button and let the page create something new.</h2>
+      </div>
+
+      <div class="quest-card" aria-label="Birthday quest game">
+        <div class="quest-head">
+          <div>
+            <p class="eyebrow">Step by step game</p>
+            <h3>Birthday Quest</h3>
+          </div>
+          <span class="quest-meter" id="questMeter">Step 1 of 3</span>
+        </div>
+
+        <div class="quest-steps" id="questSteps">
+          <span class="quest-step is-active">1. Start the sparkle</span>
+          <span class="quest-step">2. Collect the memory</span>
+          <span class="quest-step">3. Unlock the wish</span>
+        </div>
+
+        <p class="quest-copy" id="questCopy">Press start to wake up the birthday magic.</p>
+
+        <div class="quest-actions">
+          <button class="button primary quest-button" type="button" id="questButton">Start Quest</button>
+          <button class="button ghost quest-reset" type="button" id="questReset">Reset</button>
+        </div>
+      </div>
+
+      <div class="game-strip" aria-label="Birthday mini game status">
+        <span class="game-pill">Quest level: 5</span>
+        <span class="game-pill" id="surpriseScore">Spark points: 0</span>
+        <span class="game-pill">Goal: find the next surprise</span>
+      </div>
+
+      <div class="surprise-grid">
+        <button class="button ghost surprise-action" type="button" data-action="sparkle-burst">Sparkle Burst</button>
+        <button class="button ghost surprise-action" type="button" data-action="friendship-hug">Friendship Hug</button>
+        <button class="button ghost surprise-action" type="button" data-action="carousel-shuffle">Shuffle Magic</button>
+        <button class="button ghost surprise-action" type="button" data-action="secret-note">Secret Note</button>
+        <button class="button ghost surprise-action" type="button" data-action="lucky-roll">Lucky Roll</button>
+        <button class="button ghost surprise-action" type="button" data-action="friend-quest">Friend Quest</button>
+        <button class="button ghost surprise-action" type="button" data-action="star-tap">Star Tap</button>
+        <button class="button ghost surprise-action" type="button" data-action="magic-spin">Magic Spin</button>
+      </div>
+    </section>
+
+    <section class="closing reveal">
+      <div>
+        <p class="eyebrow">Final message</p>
+        <h2>Happy Birthday, Kavi.</h2>
+        <p>From Dulanka Nimsara, with respect, gratitude, and a lot of friendship.</p>
+        <div class="wish-list" aria-label="Good wishes for Kavi">
+          <span class="wish-item">Wishing you endless joy.</span>
+          <span class="wish-item">Wishing you strong health and success.</span>
+          <span class="wish-item">Wishing you laughter, peace, and great memories.</span>
+        </div>
+      </div>
+      <a class="button primary" href="#top">Back to top</a>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
