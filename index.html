@@ -7,13 +7,22 @@
   <title>Happy Birthday, Kavi</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+  <body>
+    <div class="theme-switcher" aria-label="Theme controls">
+      <button class="theme-button is-active" type="button" data-theme-choice="light">Light</button>
+      <button class="theme-button" type="button" data-theme-choice="dark">Dark</button>
+    </div>
+
   <div class="bg-orb orb-one"></div>
   <div class="bg-orb orb-two"></div>
   <div class="bg-orb orb-three"></div>
+    <div class="bg-float bg-float-one"></div>
+    <div class="bg-float bg-float-two"></div>
+    <div class="bg-float bg-float-three"></div>
+    <div class="bg-float bg-float-four"></div>
 
   <main class="page-shell" id="top">
     <section class="hero card reveal">
@@ -39,7 +48,7 @@
             <span class="spark spark-b"></span>
             <div>
               <p class="panel-label">Best Friend Energy</p>
-              <h2>Since age 5</h2>
+              <h2>Age 24</h2>
               <p>Always there, always real, always Kavi.</p>
             </div>
           </div>
@@ -125,47 +134,27 @@
     <section class="surprise-lab reveal">
       <div class="section-heading">
         <p class="eyebrow">More surprises</p>
-        <h2>Tap a button and let the page create something new.</h2>
+        <h2>Tap a button and let the page create something bright, soft, and magical.</h2>
       </div>
 
-      <div class="quest-card" aria-label="Birthday quest game">
-        <div class="quest-head">
-          <div>
-            <p class="eyebrow">Step by step game</p>
-            <h3>Birthday Quest</h3>
+      <div class="surprise-panel" aria-label="Birthday animation buttons">
+        <p class="surprise-panel-copy">These buttons trigger longer sparkles, soft floating hearts, and extra surprise motion for a light birthday vibe.</p>
+
+        <div class="secret-notes-block">
+          <p class="secret-notes-label">Open a big secret wish</p>
+          <div class="secret-note-wrap">
+            <p class="secret-note-text" id="secretNoteText">Kavi, your friendship makes ordinary days feel brighter. May age 24 bring you big wins, peaceful days, and a lot more reasons to smile.</p>
+            <button class="button primary secret-note-button" type="button" data-action="secret-note" data-note="Kavi, your friendship makes ordinary days feel brighter. May age 24 bring you big wins, peaceful days, and a lot more reasons to smile.">Open Big Wish</button>
           </div>
-          <span class="quest-meter" id="questMeter">Step 1 of 3</span>
         </div>
 
-        <div class="quest-steps" id="questSteps">
-          <span class="quest-step is-active">1. Start the sparkle</span>
-          <span class="quest-step">2. Collect the memory</span>
-          <span class="quest-step">3. Unlock the wish</span>
+        <div class="surprise-grid">
+          <button class="button ghost surprise-action" type="button" data-action="sparkle-burst">Sparkle Rain</button>
+          <button class="button ghost surprise-action" type="button" data-action="heart-float">Heart Float</button>
+          <button class="button ghost surprise-action" type="button" data-action="carousel-shuffle">Shuffle Magic</button>
+          <button class="button ghost surprise-action" type="button" data-action="sunburst">Sunburst</button>
+          <button class="button ghost surprise-action" type="button" data-action="wish-spin">Wish Spin</button>
         </div>
-
-        <p class="quest-copy" id="questCopy">Press start to wake up the birthday magic.</p>
-
-        <div class="quest-actions">
-          <button class="button primary quest-button" type="button" id="questButton">Start Quest</button>
-          <button class="button ghost quest-reset" type="button" id="questReset">Reset</button>
-        </div>
-      </div>
-
-      <div class="game-strip" aria-label="Birthday mini game status">
-        <span class="game-pill">Quest level: 5</span>
-        <span class="game-pill" id="surpriseScore">Spark points: 0</span>
-        <span class="game-pill">Goal: find the next surprise</span>
-      </div>
-
-      <div class="surprise-grid">
-        <button class="button ghost surprise-action" type="button" data-action="sparkle-burst">Sparkle Burst</button>
-        <button class="button ghost surprise-action" type="button" data-action="friendship-hug">Friendship Hug</button>
-        <button class="button ghost surprise-action" type="button" data-action="carousel-shuffle">Shuffle Magic</button>
-        <button class="button ghost surprise-action" type="button" data-action="secret-note">Secret Note</button>
-        <button class="button ghost surprise-action" type="button" data-action="lucky-roll">Lucky Roll</button>
-        <button class="button ghost surprise-action" type="button" data-action="friend-quest">Friend Quest</button>
-        <button class="button ghost surprise-action" type="button" data-action="star-tap">Star Tap</button>
-        <button class="button ghost surprise-action" type="button" data-action="magic-spin">Magic Spin</button>
       </div>
     </section>
 
